@@ -10,11 +10,11 @@
 <body>
     <header>
         <nav id="nav">
-            <p class="logo">Emmanuel</p>
+            <a href="#presentation" class="logo">Emmanuel</a>
             <div class="nav-links">
-                <a href="">About me</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+                <a href="#about-me">About me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact-info">Contact</a>
             </div>
 
         </nav>
@@ -22,7 +22,6 @@
 
     <section id="presentation">
         <h1>Hi, I'm Emmanuel Rendon Goez, <br><span style="color: #4a90e2">I'm a software developer</span></h1>
-
         <div class="logo-lan">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Python" width="100px">
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="JAVA" width="100px">
@@ -33,34 +32,66 @@
     <section id="about-me">
 
         <div id="about">
-
-            <p>Hi, I'm Emmanuel Rendon Goez and I'm twenty two years old.<br> 
-                I love to learn new things about software,<br> and I wish to improve my software skills in Riwi,<br>
-                to work as a software developer
+            <h2 class="about-title">About me</h2>
+            <p>Hi, I'm Emmanuel Rendon Goez and I'm twenty two years old. I love to learn new things about software, 
+                <br>I wish to improve my software skills in Riwi, to work as a software developer
             </p>
         </div>
 
-        
-        
         <!-- <img src="https://templatesjungle.com/wp-content/uploads/edd/2025/01/daniel-cover-1024x768.jpg" alt="Programador" width="500"> -->
         <div class="habs">
-            <h2>Skills</h2>
+            <h2 class="about-title">Skills</h2>
             <ul>
                 <li>Python</li>
                 <li>Java</li>
-            </ul>
-
-            <h2>I am Currently learning</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Java Script</li>
+                <li>Javascript</li>
             </ul>
         </div>
         
     </section>
-    <hr>
+
     <section id="projects">
+        <h1>Projects</h1>
+        <div class="cards">
+            <article  class="project-card">
+                <img src="CV.png" alt="imagen" class="project-img">
+                <p class="project-name">Curriculum Vitae</p>
+                <p class="project-desc">A simple curriculum vitae</p>
+                <p class="project-tech">HTML and CSS</p>
+                <a href="cv.html" class="btn">Watch project</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="form">
+        <h2>Contact form</h2>
+        <form action="/send" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="4" required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+    <footer>
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="example">example</a></p>
+            <p>GitHub: <a href="https://github.com/emmanuelrendon01" target="_blank">github.com/emmanuelrendon01</a></p>
+            <p>LinkedIn: <a href="example" target="_blank">example</a></p>
+        </section>
+    </footer>
+
+</body>
+</html>
+
+
+    <!-- <section id="projects">
         <h2>Projects</h2>
 
         <table>
@@ -75,21 +106,4 @@
                 <td><a href="#">View Project</a></td>
             </tr>
         </table>
-    </section>
-
-    <section id="form">
-        <form action="/send" method="post">
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message</label>
-            <textarea name="message" id="message" rows="4" required></textarea>
-
-            <input type="submit" value="Send">
-        </form>
-    </section>
-</body>
-</html>
+    </section> -->
