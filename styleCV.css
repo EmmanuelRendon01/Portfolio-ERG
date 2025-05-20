@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+}
+
+#cv{
+    border-collapse: collapse;
+    width: 600px; 
+    margin-right: auto; 
+    margin-left: auto
+    
+}
+
+#cv img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}

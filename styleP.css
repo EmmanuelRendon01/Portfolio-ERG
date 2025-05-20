@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -6,6 +10,10 @@ body {
 /* Navigation BAR*/
 
 #nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: white;
     padding: 20px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
@@ -22,6 +30,7 @@ nav p, a{
 
 nav a{
     margin: 0 20px;
+    padding-right: 20px;
 }
 nav a:hover{
     color:rgb(125, 222, 252);
@@ -32,7 +41,7 @@ nav a:hover{
 #presentation{
     color: #ffffff;
     background-color: #1e1e2f;
-    padding: 250px 200px;
+    padding: 300px 200px;
     display: flex;
     justify-content: space-between; 
 }
@@ -40,9 +49,160 @@ nav a:hover{
 /* About me*/
 
 #about-me{
-    padding: 150px;
+    padding: 100px 150px;
     display: flex;
     justify-content: space-between;
     background-color: #4a90e2;
     color: #ffffff;
 }
+
+.about-title{
+    font-size: 80px;
+}
+
+#about-me p, li{
+    font-size: 18px;
+}
+
+.habs{
+    padding-right: 400px;
+}
+
+/* PROJECTS */
+#projects{
+    background-color: #141625;
+    padding: 100px 0;
+}
+
+#projects h1{
+    text-align: center;
+    color: white;
+    padding: 0 0 100px;
+}
+
+/* CARDS */
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-card {
+    margin: 0 100px;
+    background-color: #ffffff;       /* Fondo blanco para que resalte */
+    border-radius: 12px;             /* Bordes redondeados */
+    padding: 20px;                  /* Espacio interno */
+    display: flex;
+    flex-direction: column;         /* Los elementos apilados verticalmente */
+    gap: 15px;
+}
+
+.project-img {
+    height: 350px;
+    width: 100%;                   /* Imagen ocupa todo el ancho */
+    border-radius: 10px;           /* Bordes redondeados también */
+    object-fit: cover;             /* La imagen mantiene proporción y rellena */                /* Altura fija para que las tarjetas queden iguales */
+  }
+
+.project-name {
+    
+    font-size: 1.25rem;
+    color: #1e1e2f;               /* Color oscuro */
+    margin: 0;
+}
+
+.project-desc {
+    font-size: 1rem;
+    color: #555555;               /* Gris oscuro para texto */
+    margin: 0;
+    flex-grow: 1;                 /* Ocupa espacio para que botones queden abajo */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    text-decoration: none; /* quita el subrayado */
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.project-tech{
+    font-size: 1.25rem;
+}
+
+.btn:hover{
+    background-color: #255c94;
+}
+
+/* FORM */
+
+#form {
+    background-color: #f0f4f8;
+    padding: 60px 20px;
+    color: #1e1e2f;
+
+  }
+
+  h2{
+    padding: 0 0 50px;
+    text-align: center;
+  }
+  
+  form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #255c94;
+  }
+
+/* CONTACT INFO FOOTER*/
+
+#contact-info {
+  background-color: #1e1e2f;
+  color: #f0f4f8;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 18px;
+}
+
+#contact-info a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact-info a:hover {
+  text-decoration: underline;
+}
+
+
