@@ -1,9 +1,15 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
 }
 
 /* NAV-BAR */
 #nav{
+    position: fixed;
+    width: 80%;
     background-color: white;
     display: flex;
     justify-content: space-between;
