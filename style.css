@@ -44,8 +44,8 @@ body{
     height: 50vh;
     display: flex;
     justify-content: space-between;
-    padding-right: 40vh;
-    padding-left: 20vh;
+    padding-right: 60vh;
+    padding-left: 40vh;
     align-items: center;
 } h2{
     color: white;
@@ -53,7 +53,11 @@ body{
 } p, li{
     color: white;
     font-size: 1.5rem;
-} 
+}
+
+#about{
+  max-width: 50vh;
+}
 
 /* Estilo base para la sección */
 #projects {
