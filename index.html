@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav id="nav">
+        <nav class="nav">
             <a href="#presentation" class="logo">Emmanuel</a>
             <section class="nav-links">
                 <a href="#about-me">About me</a>
@@ -19,56 +19,72 @@
             </section>
         </nav>
     </header>
+    
     <main>
-        <section id="presentation">
+        <section class="presentation" id="presentation">
             <h1>Hi, I'm Emmanuel Rendon Goez, <br><span style="color: #4a90e2">I'm a software developer</span></h1>
-            <article class="logo-lan">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Python" width="100px">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="JAVA" width="100px">
-                <img src="https://1000marcas.net/wp-content/uploads/2020/11/JavaScript-logo.png" alt="javascript" width="200px">
-            </article>
         </section>
     
-        <section id="about-me">
-            <div id="about">
-                <h2 class="about-title">About me</h2>
+        <section class="about-me" id="about-me">
+            <div class="about">
+                <div class="title">
+                    <h2 class="about-title">About me</h2>
+                </div>
                 <p>Hi, I'm Emmanuel Rendon Goez and I'm twenty two years old. <br>
                     I love to learn new things about software,
                     I wish to improve my software skills in Riwi, to work as a software developer
                 </p>
             </div>
             <div class="habs">
-                <h2 class="about-title">Skills</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>Javascript</li>
-                </ul>
+                <div class="title">
+                    <h2 class="about-title">Skills</h2>
+                </div>
+
+                <p>Python</p>
+                <p>Java</p>
+                <p>JavaScript</p>
             </div>
             
         </section>
     
-        <section id="projects">
+        <section class="projects" id="projects">
             <h1>Projects</h1>
             <div class="cards">
                 <article  class="project-card">
-                    <img src="CV.png" alt="imagen" class="project-img">
+                    <img src="./CV.png" alt="imagen" class="project-img">
                     <p class="project-name">Curriculum Vitae</p>
                     <p class="project-desc">A simple curriculum vitae</p>
                     <p class="project-tech">HTML and CSS</p>
-                    <a href="https://emmanuelrendon01.github.io/CV-Project/" class="btn">Watch project</a>
+                    <div class="project-button">
+                        <button class="btn"><a href="https://emmanuelrendon01.github.io/CV-Project/">Watch project</a></button>
+                        
+                    </div>
                 </article>
+
                 <article  class="project-card">
                     <img src="" alt="imagen" class="project-img">
                     <p class="project-name">Semantic-Multi-Section-Website</p>
                     <p class="project-desc">A website with created pages using semantic correctly</p>
                     <p class="project-tech">HTML and CSS</p>
-                    <a href="https://emmanuelrendon01.github.io/Semantic-Multi-Section-Website/index.html" class="btn">Watch project</a>
+                    <div class="project-button">
+                        <button class="btn"><a href="https://emmanuelrendon01.github.io/Semantic-Multi-Section-Website/index.html">Watch project</a></button>
+                    </div>
+                </article>
+
+                <article  class="project-card">
+                    <img src="./Restaurant.png" alt="imagen" class="project-img">
+                    <p class="project-name">Restaurant Page with responsive</p>
+                    <p class="project-desc">A page about a restaurant to learn more about css responsive and HTML</p>
+                    <p class="project-tech">HTML and CSS</p>
+                    <div class="project-button">
+                        <button class="btn"><a href="https://emmanuelrendon01.github.io/Restaurant-Website/">Watch project</a></button>
+                        
+                    </div>
                 </article>
             </div>
         </section>
     
-        <section id="form">
+        <section class="form" id="form">
             <h2>Contact form</h2>
             <form action="/send" method="post">
                 <label for="name">Name</label>
@@ -86,7 +102,7 @@
     </main>
     
     <footer>
-        <section id="contact-info">
+        <section class="contact-info" id="contact-info">
             <h2>Contact Information</h2>
             <p>Email: <a href="example">example</a></p>
             <p>GitHub: <a href="https://github.com/emmanuelrendon01" target="_blank">github.com/emmanuelrendon01</a></p>
