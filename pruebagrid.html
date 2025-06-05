@@ -1,67 +1,67 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
-    <meta name="description" content="Personal portfolio of Emmanuel Rendon Goez as a Riwi developer">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylegrid.css">
 </head>
-<body>
-    <header>
+<body class="page">
+    <header class="header">
         <nav class="nav">
-            <a href="#presentation" class="logo">Emmanuel</a>
-            <section class="nav-links">
-                <a href="#about-me">About me</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact-info">Contact</a>
+            <a href="" class="nav__logo">Emmanuel</a>
+            <section class="nav__links">
+                <a href="" class="link">About me</a>
+                <a href="" class="link">Projects</a>
+                <a href="" class="link">Contact</a>
             </section>
         </nav>
     </header>
-    
-    <main>
-        <section class="presentation" id="presentation">
-            <h1>Hi, I'm Emmanuel Rendon Goez, <br><span style="color: #4a90e2">I'm a software developer</span></h1>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero__content">
+                <p class="hero__name">Hi, I'm Emmanuel Rendon Goez, </p>
+                <p class="hero__me">I'm a software developer</p>
+            </div>
+            <div class="hero__img">
+                <img src="https://cdn-icons-png.flaticon.com/512/5969/5969113.png" alt="hero-img" class="hero-img">
+            </div>
         </section>
-    
-        <section class="about-me" id="about-me">
-            <div class="about">
-                <div class="title">
-                    <h2 class="about-title">About me</h2>
-                </div>
-                <p>Hi, I'm Emmanuel Rendon Goez and I'm twenty two years old. <br>
+
+        <section class="about-me">
+
+            <div class="about-me__content">
+                <h2 class="about-me__title">About me</h2>
+                <p class="about-me__p">Hi, I'm Emmanuel Rendon Goez and I'm twenty two years old. <br>
                     I love to learn new things about software,
                     I wish to improve my software skills in Riwi, to work as a software developer
                 </p>
             </div>
-            <div class="habs">
-                <div class="title">
-                    <h2 class="about-title">Skills</h2>
-                </div>
 
-                <p>Python</p>
-                <p>Java</p>
-                <p>JavaScript</p>
+            <div class="about-me__habs">
+                <h2 class="about-me__title">Skills</h2>
+                <p class="habs__hab">Python <br> Java <br> JavaScript</p>
             </div>
             
         </section>
-    
-        <section class="projects" id="projects">
-            <h1>Projects</h1>
-            <div class="cards">
-                <article  class="project-card">
-                    <img src="./CV.png" alt="imagen" class="project-img">
-                    <p class="project-name">Curriculum Vitae</p>
-                    <p class="project-desc">A simple curriculum vitae</p>
-                    <p class="project-tech">HTML and CSS</p>
-                    <div class="project-button">
+
+        <section class="projects">
+            <h1 class="projects__title">Projects</h1>
+            <div class="project__cards">
+                <article class="cards__card">
+                    <img src="./CV.png" alt="imagen" class="card__img">
+                    <p class="card__name">Curriculum Vitae</p>
+                    <p class="card__desc">A simple curriculum vitae</p>
+                    <p class="card__tech">HTML and CSS</p>
+                    <div class="card__button">
                         <button class="btn"><a href="https://emmanuelrendon01.github.io/CV-Project/">Watch project</a></button>
                     </div>
                 </article>
 
-                <article  class="project-card">
-                    <img src="" alt="imagen" class="project-img">
+
+                <article class="cards__card">
+                    <img src="./Restaurant.png" alt="imagen" class="card__img">
                     <p class="project-name">Semantic-Multi-Section-Website</p>
                     <p class="project-desc">A website with created pages using semantic correctly</p>
                     <p class="project-tech">HTML and CSS</p>
@@ -70,8 +70,8 @@
                     </div>
                 </article>
 
-                <article  class="project-card">
-                    <img src="./Restaurant.png" alt="imagen" class="project-img">
+                <article class="cards__card">
+                    <img src="./Restaurant.png" alt="imagen" class="card__img">
                     <p class="project-name">Restaurant Page with responsive</p>
                     <p class="project-desc">A page about a restaurant to learn more about css responsive and HTML</p>
                     <p class="project-tech">HTML and CSS</p>
@@ -80,8 +80,8 @@
                     </div>
                 </article>
 
-                <article  class="project-card">
-                    <img src="" alt="imagen" class="project-img">
+                <article class="cards__card">
+                    <img src="./Restaurant.png" alt="imagen" class="card__img">
                     <p class="project-name">A landing Page</p>
                     <p class="project-desc">A page about a "Ceramix" Company</p>
                     <p class="project-tech">HTML and CSS</p>
@@ -90,8 +90,8 @@
                     </div>
                 </article>
 
-                <article  class="project-card">
-                    <img src="" alt="imagen" class="project-img">
+                <article class="cards__card">
+                    <img src="./Restaurant.png" alt="imagen" class="card__img">
                     <p class="project-name">Website of a fair</p>
                     <p class="project-desc">A page about a fair website to know Bello city</p>
                     <p class="project-tech">HTML and CSS</p>
@@ -101,10 +101,12 @@
                 </article>
             </div>
         </section>
-    
-        <section class="form" id="form">
-            <h2>Contact form</h2>
-            <form action="/send" method="post">
+
+        <section class="contact">
+            <div class="contact__title">
+                <h2 class="form__title">Contact form</h2>
+            </div>
+            <form action="" class="contact__form">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
     
@@ -118,13 +120,13 @@
             </form>
         </section>
     </main>
-    
-    <footer>
-        <section class="contact-info" id="contact-info">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="example">example</a></p>
-            <p>GitHub: <a href="https://github.com/emmanuelrendon01" target="_blank">github.com/emmanuelrendon01</a></p>
-            <p>LinkedIn: <a href="example" target="_blank">example</a></p>
+
+    <footer class="footer">
+        <section class="contact-info">
+            <h2 class="contact-info__title">Contact Information</h2>
+            <p class="contact-info__email">Email: <a href="example">Example</a></p>
+            <p class="contact-info__github">GitHub: <a href="https://github.com/emmanuelrendon01">https://github.com/emmanuelrendon01</a></p>
+            <p class="contact-info__linkedin">LinkedIn: <a href="example">Example</a></p>
         </section>
     </footer>
 
