@@ -1,110 +1,136 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
-    <meta name="description" content="Personal portfolio of Emmanuel Rendon Goez as a Riwi developer">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
+
+<body class="body">
+
+    <!-- HEADER -->
+
+    <header class="header">
         <nav class="nav">
-            <a href="#presentation" class="logo">Emmanuel</a>
-            <section class="nav-links">
-                <a href="#about-me">About me</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact-info">Contact</a>
+            <a href="#hero" class="nav__logo">Emmanuel</a>
+            <section class="nav__links">
+                <a href="#about-me" class="link">About me</a>
+                <a href="#projects" class="link">Projects</a>
+                <a href="#contact" class="link">Contact</a>
             </section>
         </nav>
     </header>
-    
-    <main>
-        <section class="presentation" id="presentation">
-            <h1>Hi, I'm Emmanuel Rendon Goez, <br><span style="color: #4a90e2">I'm a software developer</span></h1>
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <!-- HERO SECTION -->
+
+        <section class="hero" id="hero">
+            <div class="hero__content">
+                <p class="hero__name">Hi, I'm Emmanuel Rendon Goez, </p>
+                <p class="hero__me">I'm a software developer</p>
+            </div>
+            <div class="hero-section__img">
+                <img src="./assets/hero_img.png" alt="hero-img" class="hero__img">
+            </div>
         </section>
-    
+        
+        <!-- ABOUT-ME SECTION -->
+
         <section class="about-me" id="about-me">
-            <div class="about">
-                <div class="title">
-                    <h2 class="about-title">About me</h2>
-                </div>
-                <p>Hi, I'm Emmanuel Rendon Goez and I'm twenty two years old. <br>
+
+            <div class="about-me__content">
+                <h2 class="about-me__title">About me</h2>
+                <p class="about-me__p">Hi, I'm Emmanuel Rendon Goez and I'm twenty two years old. <br>
                     I love to learn new things about software,
                     I wish to improve my software skills in Riwi, to work as a software developer
                 </p>
             </div>
-            <div class="habs">
-                <div class="title">
-                    <h2 class="about-title">Skills</h2>
-                </div>
 
-                <p>Python</p>
-                <p>Java</p>
-                <p>JavaScript</p>
+            <div class="about-me__habs">
+                <h2 class="about-me__title">Skills</h2>
+                <ul class="about-me__hab-list">
+                    <li class="hab-list__skill">Python</li>
+                    <li class="hab-list__skill">Java</li>
+                    <li class="hab-list__skill">JavaScript</li>
+                </ul>
             </div>
             
         </section>
-    
+
+        <!-- PROJECTS SECTION -->
+
         <section class="projects" id="projects">
-            <h1>Projects</h1>
-            <div class="cards">
-                <article  class="project-card">
-                    <img src="./CV.png" alt="imagen" class="project-img">
-                    <p class="project-name">Curriculum Vitae</p>
-                    <p class="project-desc">A simple curriculum vitae</p>
-                    <p class="project-tech">HTML and CSS</p>
-                    <div class="project-button">
-                        <button class="btn"><a href="https://emmanuelrendon01.github.io/CV-Project/">Watch project</a></button>
+            <h1 class="projects__title">Projects</h1>
+
+            <!-- CARDS -->
+
+            <div class="project__cards">
+                <article class="card">
+                    <img src="./assets/cv_project.png" alt="imagen" class="card__img">
+                    <p class="project__name">Curriculum Vitae</p>
+                    <p class="project__desc">A simple curriculum vitae</p>
+                    <div class="project__bottom">
+                        <p class="project__tech">HTML and CSS</p>
+                        <button class="project__button"><a href="https://emmanuelrendon01.github.io/CV-Project/">Watch project</a></button>
                     </div>
                 </article>
 
-                <article  class="project-card">
-                    <img src="" alt="imagen" class="project-img">
-                    <p class="project-name">Semantic-Multi-Section-Website</p>
-                    <p class="project-desc">A website with created pages using semantic correctly</p>
-                    <p class="project-tech">HTML and CSS</p>
-                    <div class="project-button">
-                        <button class="btn"><a href="https://emmanuelrendon01.github.io/Semantic-Multi-Section-Website/index.html">Watch project</a></button>
+                <article class="card">
+                    <img src="./assets/semantic_project.png" alt="imagen" class="card__img">
+                    <p class="project__name">Semantic-Multi-Section-Website</p>
+                    <p class="project__desc">A website with created pages using semantic correctly</p>
+                    <div class="project__bottom">
+                        <p class="project__tech">HTML and CSS</p>
+                        <button class="project__button"><a href="https://emmanuelrendon01.github.io/Semantic-Multi-Section-Website/index.html">Watch project</a></button>
                     </div>
                 </article>
 
-                <article  class="project-card">
-                    <img src="./Restaurant.png" alt="imagen" class="project-img">
-                    <p class="project-name">Restaurant Page with responsive</p>
-                    <p class="project-desc">A page about a restaurant to learn more about css responsive and HTML</p>
-                    <p class="project-tech">HTML and CSS</p>
-                    <div class="project-button">
-                        <button class="btn"><a href="https://emmanuelrendon01.github.io/Restaurant-Website/">Watch project</a></button>
+                <article class="card">
+                    <img src="./assets/restaurant_project.png" alt="imagen" class="card__img">
+                    <p class="project__name">Restaurant Page with responsive</p>
+                    <p class="project__desc">A page about a restaurant to learn more about css responsive and HTML</p>
+                    <div class="project__bottom">
+                        <p class="project__tech">HTML and CSS</p>
+                        <button class="project__button"><a href="https://emmanuelrendon01.github.io/Restaurant-Website/">Watch project</a></button>
                     </div>
                 </article>
 
-                <article  class="project-card">
-                    <img src="" alt="imagen" class="project-img">
-                    <p class="project-name">A landing Page</p>
-                    <p class="project-desc">A page about a "Ceramix" Company</p>
-                    <p class="project-tech">HTML and CSS</p>
-                    <div class="project-button">
-                        <button class="btn"><a href="https://emmanuelrendon01.github.io/Landing-page/">Watch project</a></button>
+                <article class="card">
+                    <img src="./assets/landing_project.png" alt="imagen" class="card__img">
+                    <p class="project__name">A landing Page</p>
+                    <p class="project__desc">A page about a "Ceramix" Company</p>
+                    <div class="project__bottom">
+                        <p class="project__tech">HTML and CSS</p>
+                        <button class="project__button"><a href="https://emmanuelrendon01.github.io/Landing-page/">Watch project</a></button>
                     </div>
                 </article>
 
-                <article  class="project-card">
-                    <img src="" alt="imagen" class="project-img">
-                    <p class="project-name">Website of a fair</p>
-                    <p class="project-desc">A page about a fair website to know Bello city</p>
-                    <p class="project-tech">HTML and CSS</p>
-                    <div class="project-button">
-                        <button class="btn"><a href="https://jteban1.github.io/feria/">Watch project</a></button>
+                <article class="card">
+                    <img src="./assets/fair_project.png" alt="imagen" class="card__img">
+                    <p class="project__name">Website of a fair</p>
+                    <p class="project__desc">A page about a fair website to know Bello city</p>
+                    <div class="project__bottom">
+                        <p class="project__tech">HTML and CSS</p>
+                        <button class="project__button"><a href="https://jteban1.github.io/feria/">Watch project</a></button>
                     </div>
                 </article>
             </div>
         </section>
-    
-        <section class="form" id="form">
-            <h2>Contact form</h2>
-            <form action="/send" method="post">
+
+        <!-- CONTACT SECTION -->
+
+        <section class="contact" id="contact">
+            <div class="contact__title">
+                <h2 class="form__title">Contact form</h2>
+            </div>
+            <form action="" class="contact__form">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
     
@@ -118,13 +144,15 @@
             </form>
         </section>
     </main>
-    
-    <footer>
-        <section class="contact-info" id="contact-info">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="example">example</a></p>
-            <p>GitHub: <a href="https://github.com/emmanuelrendon01" target="_blank">github.com/emmanuelrendon01</a></p>
-            <p>LinkedIn: <a href="example" target="_blank">example</a></p>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <section class="contact-info">
+            <h2 class="contact-info__title">Contact Information</h2>
+            <p class="contact-info__email">Email: <a class="contact-info__link" href="example">Example</a></p>
+            <p class="contact-info__github">GitHub: <a class="contact-info__link" href="https://github.com/emmanuelrendon01">https://github.com/emmanuelrendon01</a></p>
+            <p class="contact-info__linkedin">LinkedIn: <a class="contact-info__link" href="example">Example</a></p>
         </section>
     </footer>
 
