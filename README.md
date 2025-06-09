@@ -6,9 +6,9 @@
 
 ### Clan: **Ritchie**
 
-## Correo electrónico: **emarendon1301@gmail.com**
+### Correo electrónico: **emarendon1301@gmail.com**
 
-## Cédula **1001250755**
+### Cédula **1001250755**
 
 ## Contenido
 
