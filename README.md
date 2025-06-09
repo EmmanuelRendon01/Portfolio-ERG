@@ -14,7 +14,7 @@
 
 Este documento muestra el diseño del portafolio y sus diferentes contenidos
 
-## Maquetado
+### Maquetado
 
 ![Maquetado](./assets/maquetado.svg)
 
