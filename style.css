@@ -533,9 +533,6 @@ html{
 
 @media (max-width: 600px) {
 
-
-    /* RESPONSIVE PROJECTS */
-
     .project__cards{
         grid-template-columns: auto;
         padding: 0;
@@ -543,40 +540,39 @@ html{
     }
 
     .hero__img{
-        width: 60%;
+        width: 40%;
     }
 
     .card{
         width: 80%;
     }
-
 }
-
-/* LAPTOP */
 
 @media (max-width: 1500px) {
 
-        .hero__img{
-            width: 80%;
-        }
+    .hero__img{
+        width: 40%;
+    }
 
-        .hero__name{
-            font-size: 2em;
-        }
+    .hero__name{
+        font-size: 2em;
+    }
 
-        .hero__me{
-            font-size: 2em;
-        }
+    .hero__me{
+        font-size: 2em;
+    }
 
-        .about-me{
-            padding: 5em 5em 5em 5em ;
-        }
+    .about-me{
+        padding: 5em 5em 5em 5em ;
+    }
 
-        .about-me__content{
-            width: 80%;
-        }
+    .about-me__content{
+        width: 100%;
+    }
 
-        .card{
-            width: 30vh;
-        }
+    .card{
+        width: 40vw;
+    }
+
 }
+
