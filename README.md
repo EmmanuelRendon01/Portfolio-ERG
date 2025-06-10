@@ -1,15 +1,5 @@
 # Portafolio hecho con HTML Y CSS
 
-## CODER
-
-### Nombre: **Emmanuel Rendon Goez**
-
-### Clan: **Ritchie**
-
-### Correo electrónico: **emarendon1301@gmail.com**
-
-### Cédula **1001250755**
-
 ## Contenido
 
 Este documento muestra el diseño del portafolio y sus diferentes contenidos
